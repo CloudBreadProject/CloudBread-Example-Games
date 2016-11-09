@@ -60,7 +60,17 @@ public class FlappyScript : MonoBehaviour
 
         else if (GameStateManager.GameState == GameState.Dead)
         {
-
+			if (!isUpdatetoServer) {
+				CloudBread.CBComUdtMemberGameInfoes.Request (
+					new CloudBread.CBComUdtMemberGameInfoes.Post {
+						Points = ScoreManagerScript.Score.ToString()
+					},
+					(CloudBread.CBComUdtMemberGameInfoes.Receive obj) => {
+						print("[CBComUdtMemberGameInfoes Result] : " + obj.result);
+					}
+				);
+				isUpdatetoServer = true;
+			}
         }
 
     }
