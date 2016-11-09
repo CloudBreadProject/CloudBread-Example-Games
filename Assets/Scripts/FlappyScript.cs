@@ -12,7 +12,6 @@ public class FlappyScript : MonoBehaviour
     public Sprite GetReadySprite;
     public float RotateUpSpeed = 1, RotateDownSpeed = 1;
     public GameObject IntroGUI, DeathGUI;
-    public Collider2D restartButtonGameCollider;
     public float VelocityPerJump = 3;
     public float XSpeed = 1;
 
@@ -61,23 +60,17 @@ public class FlappyScript : MonoBehaviour
 
         else if (GameStateManager.GameState == GameState.Dead)
         {
-            Vector2 contactPoint = Vector2.zero;
 
-            if (Input.touchCount > 0)
-                contactPoint = Input.touches[0].position;
-            if (Input.GetMouseButtonDown(0))
-                contactPoint = Input.mousePosition;
-
-            //check if user wants to restart the game
-            if (restartButtonGameCollider == Physics2D.OverlapPoint
-                (Camera.main.ScreenToWorldPoint(contactPoint)))
-            {
-                GameStateManager.GameState = GameState.Intro;
-                Application.LoadLevel(Application.loadedLevelName);
-            }
         }
 
     }
+
+	private bool isUpdatetoServer = false;
+
+	public void RestartButtonClick(){
+        GameStateManager.GameState = GameState.Intro;
+        Application.LoadLevel(Application.loadedLevelName);
+	}
 
 
     void FixedUpdate()

@@ -13,32 +13,23 @@ public class ScoreManagerScript : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-
-        if (previousScore != Score) //save perf from non needed calculations
-        { 
-            if(Score < 10)
-            {
-                //just draw units
-                Units.sprite = numberSprites[Score];
-            }
-            else if(Score >= 10 && Score < 100)
-            {
-                (Tens.gameObject as GameObject).SetActive(true);
-                Tens.sprite = numberSprites[Score / 10];
-                Units.sprite = numberSprites[Score % 10];
-            }
-            else if(Score >= 100)
-            {
-                (Hundreds.gameObject as GameObject).SetActive(true);
-                Hundreds.sprite = numberSprites[Score / 100];
-                int rest = Score % 100;
-                Tens.sprite = numberSprites[rest / 10];
-                Units.sprite = numberSprites[rest % 10];
-            }
-        }
-
+		if (previousScore != Score) { //save perf from non needed calculations
+			if (Score < 10) {
+				//just draw units
+				Units.sprite = numberSprites [Score];
+			} else if (Score >= 10 && Score < 100) {
+				(Tens.gameObject as GameObject).SetActive (true);
+				Tens.sprite = numberSprites [Score / 10];
+				Units.sprite = numberSprites [Score % 10];
+			} else if (Score >= 100) {
+				(Hundreds.gameObject as GameObject).SetActive (true);
+				Hundreds.sprite = numberSprites [Score / 100];
+				int rest = Score % 100;
+				Tens.sprite = numberSprites [rest / 10];
+				Units.sprite = numberSprites [rest % 10];
+			}
+		}
 	}
-
 
     int previousScore = -1;
     public Sprite[] numberSprites;
