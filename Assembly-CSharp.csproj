@@ -53,7 +53,6 @@
      <Compile Include="Assets\CloudBread\Postman\Postman.cs" />
      <Compile Include="Assets\CloudBread\Protocols\CloudBread.POST.CBComUdtMemberGameInfoes.cs" />
      <Compile Include="Assets\CloudBread\Protocols\CloudBread.POST.CBInsRegMember.cs" />
-     <Compile Include="Assets\CloudBread\Protocols\CloudBread.POST.CBSelLoginIDDupeCheck.cs" />
      <Compile Include="Assets\CloudBread\Protocols\CloudBread.POST.FacebookAuthentication.cs" />
      <Compile Include="Assets\CloudBread\TestCall.cs" />
      <Compile Include="Assets\FacebookSDK\Examples\Scripts\ConsoleBase.cs" />
