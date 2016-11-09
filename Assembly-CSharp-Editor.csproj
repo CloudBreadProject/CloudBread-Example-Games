@@ -6,10 +6,10 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{490918FC-2ECB-F2B6-9046-7EFE52FBC66C}</ProjectGuid>
+    <ProjectGuid>{90C5ED48-08B6-588C-E64E-B14A51CC447B}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <AssemblyName>Assembly-CSharp</AssemblyName>
+    <AssemblyName>Assembly-CSharp-Editor</AssemblyName>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <BaseDirectory>Assets</BaseDirectory>
@@ -45,47 +45,50 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\CloudBread\CBAuthentication.cs" />
-     <Compile Include="Assets\CloudBread\CBInstance.cs" />
-     <Compile Include="Assets\CloudBread\CBSetting.cs" />
-     <Compile Include="Assets\CloudBread\CBTool.cs" />
-     <Compile Include="Assets\CloudBread\CloudBread.cs" />
-     <Compile Include="Assets\CloudBread\Postman\Postman.cs" />
-     <Compile Include="Assets\CloudBread\Protocols\CloudBread.POST.CBComUdtMemberGameInfoes.cs" />
-     <Compile Include="Assets\CloudBread\Protocols\CloudBread.POST.CBInsRegMember.cs" />
-     <Compile Include="Assets\CloudBread\Protocols\CloudBread.POST.CBSelLoginIDDupeCheck.cs" />
-     <Compile Include="Assets\CloudBread\Protocols\CloudBread.POST.FacebookAuthentication.cs" />
-     <Compile Include="Assets\CloudBread\TestCall.cs" />
-     <Compile Include="Assets\FacebookSDK\Examples\Scripts\ConsoleBase.cs" />
-     <Compile Include="Assets\FacebookSDK\Examples\Scripts\LogView.cs" />
-     <Compile Include="Assets\FacebookSDK\Examples\Scripts\MenuBase.cs" />
-     <Compile Include="Assets\FacebookSDK\Examples\Scripts\SubMenus\AccessTokenMenu.cs" />
-     <Compile Include="Assets\FacebookSDK\Examples\Scripts\SubMenus\AppEvents.cs" />
-     <Compile Include="Assets\FacebookSDK\Examples\Scripts\SubMenus\AppInvites.cs" />
-     <Compile Include="Assets\FacebookSDK\Examples\Scripts\SubMenus\AppLinks.cs" />
-     <Compile Include="Assets\FacebookSDK\Examples\Scripts\SubMenus\AppRequests.cs" />
-     <Compile Include="Assets\FacebookSDK\Examples\Scripts\SubMenus\DialogShare.cs" />
-     <Compile Include="Assets\FacebookSDK\Examples\Scripts\SubMenus\GameGroups.cs" />
-     <Compile Include="Assets\FacebookSDK\Examples\Scripts\SubMenus\GraphRequest.cs" />
-     <Compile Include="Assets\FacebookSDK\Examples\Scripts\SubMenus\MainMenu.cs" />
-     <Compile Include="Assets\FacebookSDK\Examples\Scripts\SubMenus\Pay.cs" />
-     <Compile Include="Assets\Scripts\CameraFollow.cs" />
-     <Compile Include="Assets\Scripts\FaceBookLoginScript.cs" />
-     <Compile Include="Assets\Scripts\FlappyScript.cs" />
-     <Compile Include="Assets\Scripts\FloorMoveScript.cs" />
-     <Compile Include="Assets\Scripts\GameState.cs" />
-     <Compile Include="Assets\Scripts\PipeDestroyerScript.cs" />
-     <Compile Include="Assets\Scripts\RandomBackgroundScript.cs" />
-     <Compile Include="Assets\Scripts\ScoreManagerScript.cs" />
-     <Compile Include="Assets\Scripts\SpawnerScript.cs" />
+     <Compile Include="Assets\CloudBread\Editor\CBPostman.cs" />
+     <Compile Include="Assets\CloudBread\Editor\CBPreference.cs" />
+     <Compile Include="Assets\CloudBread\Editor\CBToolEditor.cs" />
      <None Include="Assets\Editor Default Resources\CloudBread\Template.CBClass.txt" />
      <None Include="Assets\Editor Default Resources\CloudBread\Template.Class.txt" />
      <None Include="Assets\Plugins\Android\AndroidManifest.xml" />
+ <Reference Include="UnityEditor.Advertisements">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Advertisements/Editor/UnityEditor.Advertisements.dll</HintPath>
+ </Reference>
+ <Reference Include="nunit.framework">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/EditorTestsRunner/Editor/nunit.framework.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.EditorTestsRunner">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/EditorTestsRunner/Editor/UnityEditor.EditorTestsRunner.dll</HintPath>
+ </Reference>
  <Reference Include="UnityEngine.UI">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
+ <Reference Include="UnityEditor.UI">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/Editor/UnityEditor.UI.dll</HintPath>
+ </Reference>
  <Reference Include="UnityEngine.Networking">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.Networking">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Networking/Editor/UnityEditor.Networking.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.TreeEditor">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/TreeEditor/Editor/UnityEditor.TreeEditor.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.Graphs">
+ <HintPath>/Applications/Unity/Unity.app/Contents/Frameworks/Managed/UnityEditor.Graphs.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.Android.Extensions">
+ <HintPath>/Applications/Unity/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.iOS.Extensions">
+ <HintPath>/Applications/Unity/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.WindowsStandalone.Extensions">
+ <HintPath>/Applications/Unity/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.OSXStandalone.Extensions">
+ <HintPath>/Applications/Unity/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll</HintPath>
  </Reference>
  <Reference Include="Facebook.Unity.IOS">
  <HintPath>/Users/YoonSeok/WorkSpace/CloudBread/CloudBread-Example-Games/Assets/FacebookSDK/Plugins/iOS/Facebook.Unity.IOS.dll</HintPath>
@@ -93,6 +96,19 @@
  <Reference Include="Facebook.Unity">
  <HintPath>/Users/YoonSeok/WorkSpace/CloudBread/CloudBread-Example-Games/Assets/FacebookSDK/Plugins/Facebook.Unity.dll</HintPath>
  </Reference>
+ <Reference Include="Facebook.Unity.Editor">
+ <HintPath>/Users/YoonSeok/WorkSpace/CloudBread/CloudBread-Example-Games/Assets/FacebookSDK/Plugins/Editor/Facebook.Unity.Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.iOS.Extensions.Xcode">
+ <HintPath>/Applications/Unity/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.iOS.Extensions.Common">
+ <HintPath>/Applications/Unity/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Common.dll</HintPath>
+ </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Assembly-CSharp.csproj">
+      <Project>{490918FC-2ECB-F2B6-9046-7EFE52FBC66C}</Project>      <Name>Assembly-CSharp</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

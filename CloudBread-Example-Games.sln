@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 11.00
 
 Project("{4BE3ED17-A629-2970-9F41-EECA016EAEC5}") = "CloudBread-Example-Games", "Assembly-CSharp.csproj", "{490918FC-2ECB-F2B6-9046-7EFE52FBC66C}"
 EndProject
+Project("{4BE3ED17-A629-2970-9F41-EECA016EAEC5}") = "CloudBread-Example-Games", "Assembly-CSharp-Editor.csproj", "{90C5ED48-08B6-588C-E64E-B14A51CC447B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -13,6 +15,10 @@ Global
 		{490918FC-2ECB-F2B6-9046-7EFE52FBC66C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{490918FC-2ECB-F2B6-9046-7EFE52FBC66C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{490918FC-2ECB-F2B6-9046-7EFE52FBC66C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{90C5ED48-08B6-588C-E64E-B14A51CC447B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{90C5ED48-08B6-588C-E64E-B14A51CC447B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{90C5ED48-08B6-588C-E64E-B14A51CC447B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{90C5ED48-08B6-588C-E64E-B14A51CC447B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

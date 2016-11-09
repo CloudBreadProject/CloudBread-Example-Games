@@ -1,0 +1,5 @@
+﻿
+        [Serializable]
+        public {0} {1}
+        {{
+{2}        }}
